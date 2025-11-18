@@ -1,0 +1,49 @@
+# .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+htmlcov/
+.tox/
+
+# Virtual environment
+.venv/
+venv/
+env/
+/app/.venv
+/app/venv
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Logs and Documentation
+*.log
+docs/
+/alembic/versions  # Uncomment if you want to ignore Alembic migration files
+/alembic.ini      # Often ignored if dynamically generated
+
+# Database files
+*.sqlite
+*.db
+
+# Temporary/System files
+.mypy_cache/
+.pytest_cache/
+
+# Environment Variables
+.env

@@ -18,23 +18,25 @@ This project implements a modular, testable, and asynchronous prototype of an In
 
 The code is organized into distinct, reusable modules to adhere to the modularity, reusability, and testability requirements.
 
-book_management_system/
+```
+book_management_system/    
 ├── app/
-│   ├── api/                      # FastAPI Routers / Endpoints
-│   │   ├── endpoints/            # Auth, Books, Reviews, Recommendations endpoints
-│   │   └── dependencies.py       # JWT validation and RBAC checks
-│   ├── core/                     # Configuration & Security (config.py, security.py)
-│   ├── db/                       # Database session + Base class
-│   ├── models/                   # SQLAlchemy ORM models (book, review, user)
-│   ├── schemas/                  # Pydantic schemas (validation & serialization)
-│   ├── services/                 # Business logic (CRUD, independent of API layer)
-│   ├── ai_models/                # LLM client for Llama3 integration
-│   └── main.py                   # FastAPI application entry point
-├── tests/                        # Unit tests (conftest.py, test_*.py)
-├── Dockerfile                    # API service container definition
-├── docker-compose.yml            # Multi-service stack (API, DB, Ollama)
-├── requirements.txt              # Python dependencies
-└── README.md                     # Documentation (this file)
+│   ├── api/                      # FastAPI Routers / Endpoints    
+│   │   ├── endpoints/            # Auth, Books, Reviews, Recommendations endpoints    
+│   │   └── dependencies.py       # JWT validation and RBAC checks    
+│   ├── core/                     # Configuration & Security (config.py, security.py)    
+│   ├── db/                       # Database session + Base class    
+│   ├── models/                   # SQLAlchemy ORM models (book, review, user)    
+│   ├── schemas/                  # Pydantic schemas (validation & serialization)    
+│   ├── services/                 # Business logic (CRUD, independent of API layer)    
+│   ├── ai_models/                # LLM client for Llama3 integration    
+│   └── main.py                   # FastAPI application entry point    
+├── tests/                        # Unit tests (conftest.py, test_*.py)     
+├── Dockerfile                    # API service container definition    
+├── docker-compose.yml            # Multi-service stack (API, DB, Ollama)    
+├── requirements.txt              # Python dependencies    
+└── README.md                     # Documentation (this file)     
+```    
 
 ---
 

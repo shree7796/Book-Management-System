@@ -18,7 +18,23 @@ This project implements a modular, testable, and asynchronous prototype of an In
 
 The code is organized into distinct, reusable modules to adhere to the modularity, reusability, and testability requirements.
 
-book_management_system/ ├── app/ │ ├── api/ # FastAPI Routers/Endpoints │ │ ├── endpoints/ # Auth, Books, Reviews, Recommendations endpoints │ │ └── dependencies.py # JWT validation and RBAC checks │ ├── core/ # Configuration and Security (config.py, security.py) │ ├── db/ # Database Session and Base Class │ ├── models/ # SQLAlchemy ORM Models (book, review, user) │ ├── schemas/ # Pydantic Schemas (data validation/serialization) │ ├── services/ # Core Business Logic (CRUD operations, independent of API layer) │ ├── ai_models/ # LLMClient for Llama3 Integration │ └── main.py # FastAPI application entry point ├── tests/ # Mandatory Unit Tests (conftest.py, test_*.py) ├── Dockerfile # Containerization for the API service ├── docker-compose.yml # Defines the multi-service stack (API, DB, Ollama) ├── requirements.txt # Project dependencies └── README.md # Documentation (this file)
+book_management_system/
+├── app/
+│   ├── api/                      # FastAPI Routers / Endpoints
+│   │   ├── endpoints/            # Auth, Books, Reviews, Recommendations endpoints
+│   │   └── dependencies.py       # JWT validation and RBAC checks
+│   ├── core/                     # Configuration & Security (config.py, security.py)
+│   ├── db/                       # Database session + Base class
+│   ├── models/                   # SQLAlchemy ORM models (book, review, user)
+│   ├── schemas/                  # Pydantic schemas (validation & serialization)
+│   ├── services/                 # Business logic (CRUD, independent of API layer)
+│   ├── ai_models/                # LLM client for Llama3 integration
+│   └── main.py                   # FastAPI application entry point
+├── tests/                        # Unit tests (conftest.py, test_*.py)
+├── Dockerfile                    # API service container definition
+├── docker-compose.yml            # Multi-service stack (API, DB, Ollama)
+├── requirements.txt              # Python dependencies
+└── README.md                     # Documentation (this file)
 
 ---
 
